@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane minHeight="500.0" minWidth="950.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cm.controllers.MainWindowController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <HBox>
+               <children>
+                  <VBox alignment="TOP_CENTER" minWidth="150.0" styleClass="background">
+                     <children>
+                        <Label alignment="CENTER" text="Menu" />
+                        <Button fx:id="clientCtrl" mnemonicParsing="false" onAction="#buttonMainListener" text="Control de Clients">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" text="Button">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <Label alignment="CENTER" text="Absances" />
+                        <TableView>
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="C1" />
+                            <TableColumn prefWidth="75.0" text="C2" />
+                          </columns>
+                        </TableView>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <Label alignment="CENTER" text="Top absances" />
+                        <TableView>
+                           <columns>
+                              <TableColumn prefWidth="75.0" text="C1" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                           </columns>
+                        </TableView>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <Label alignment="CENTER" text="Prochaines Evenements" />
+                        <TableView>
+                           <columns>
+                              <TableColumn prefWidth="75.0" text="C1" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                           </columns>
+                        </TableView>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <Label alignment="CENTER" text="Prochaines anniversaires" />
+                        <TableView>
+                           <columns>
+                              <TableColumn prefWidth="75.0" text="C1" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                           </columns>
+                        </TableView>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <PieChart />
+                  <LineChart>
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </LineChart>
+                  <BarChart>
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

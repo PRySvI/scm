@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="scm@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.1">
+    <root id="1"/>
+    <schema id="2" parent="1" name="scm">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <schema id="6" parent="1" name="personnes"/>
+    <schema id="7" parent="1" name="sys"/>
+    <schema id="8" parent="1" name="test"/>
+    <table id="9" parent="2" name="personnes"/>
+    <table id="10" parent="2" name="personnes_copy"/>
+    <column id="11" parent="9" name="id">
+      <Position>1</Position>
+      <DataType>int(255) unsigned zerofill|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="12" parent="9" name="Nom">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="13" parent="9" name="Prenom">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="14" parent="9" name="Adresse">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="15" parent="9" name="Email">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="16" parent="9" name="Emploi">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="17" parent="9" name="Interesses">
+      <Position>7</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="18" parent="9" name="date_de_naissance">
+      <Position>8</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="19" parent="9" name="telephone1">
+      <Position>9</Position>
+      <DataType>varchar(255)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="20" parent="9" name="telephone2">
+      <Position>10</Position>
+      <DataType>varchar(255)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="21" parent="9" name="niveau">
+      <Position>11</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="22" parent="9" name="derniers_infos">
+      <Position>12</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="23" parent="9" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="24" parent="10" name="id">
+      <Position>1</Position>
+      <DataType>int(255) unsigned zerofill|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="25" parent="10" name="Nom">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="26" parent="10" name="Prenom">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="27" parent="10" name="Adresse">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="28" parent="10" name="Email">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="29" parent="10" name="Emploi">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="30" parent="10" name="Interesses">
+      <Position>7</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="31" parent="10" name="age">
+      <Position>8</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="32" parent="10" name="telephone1">
+      <Position>9</Position>
+      <DataType>mediumtext|0</DataType>
+    </column>
+    <column id="33" parent="10" name="telephone2">
+      <Position>10</Position>
+      <DataType>mediumtext|0</DataType>
+    </column>
+    <column id="34" parent="10" name="relation">
+      <Position>11</Position>
+      <DataType>int(255)|0</DataType>
+    </column>
+    <key id="35" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
